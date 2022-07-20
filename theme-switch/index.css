@@ -1,0 +1,54 @@
+@import "theme-toggle.css";
+
+@custom-media --motionOK (prefers-reduced-motion: no-preference);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  block-size: 100%;
+  color-scheme: light;
+
+  &[data-theme="dark"] {
+    color-scheme: dark;
+
+    @supports not (color-scheme: dark) {
+      background: #111; 
+    }
+  }
+}
+
+body {
+  min-block-size: 100%;
+  font-family: system-ui, sans-serif;
+  
+  display: grid;
+  place-content: center;
+}
+
+.github-corner {
+  fill: hotpink;
+  color: Canvas; 
+  
+  &:hover .octo-arm {
+    animation: octocat-wave 560ms ease-in-out
+  }
+
+  @nest [data-theme="dark"] & {
+    fill: indigo;
+  }
+}
+
+@keyframes octocat-wave{
+  0%,100% {
+    transform: rotate(0)
+  }
+  20%,60% {
+    transform: rotate(-25deg)
+  }
+  40%,80% {
+    transform: rotate(10deg)
+  }
+}

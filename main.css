@@ -4,137 +4,72 @@
     box-sizing: border-box;
 }
 :root{
-    --clr: #222327;
+    --clr: #222;
 }
 
 body{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
     background-color: var(--clr);
 }
-.navigation{
-    height: 70px;
-    width: 400px;
-    position: relative;
-    background-color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-}
-.navigation ul{
-    width: 350px;
-    display:flex;
-}
-.navigation ul li{
-    position: relative;
-    list-style: none;
-    width: 70px;
-    height: 70px;
-    z-index: 1px
-}
-.navigation ul li a{
+.box{
     position:relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    text-align: center;
-    font-weight: 500;
-    text-decoration: none;
-    color: #000;
-    font-weight: 600;
-    font-family: sans-serif;
+    width:400px;
+    height:300px;
+    /* background-color: #fff; */
 }
-.navigation ul li a .icon{
-    position: relative;
-    display: block;
-    line-height: 75px;
-    font-size:1.5rem;
-    text-align: center;
-    transition: 0.5s;
-    color: var(--clr);
-    z-index: 1;
-}
-
-.navigation ul li.active a .icon{
-    transform: translateY(-35px);
-}
-
-/* .navigation ul li:hover a .icon {
-    transform: translateY(-35px);
-} */
-.navigation ul li a .text{
+.box span{
     position: absolute;
-    color: var(--clr);
-    font-weight: 400;
-    font-size: 0.75rem;
-    letter-spacing: 0.05rem;
+    inset: 0;
     transition: 0.5s;
-    opacity: 0;
-    transform: translateY(20px);
+    background: url(img.jpg);
+    background-size:cover;
+}
+.box span:nth-child(1){
+    clip-path: polygon(0 0, 50% 0, 50% 50%, 0 50%);
+    /* background: #a00; */
+    transition-delay: 0s; 
+}
+.box span:nth-child(2){
+    clip-path: polygon(50% 0, 100% 0, 100% 50%, 50% 50%);
+    /* background: #0a0; */
+    transition-delay: 0.25s;   
+}
+.box span:nth-child(3){
+    clip-path: polygon(0 50%, 50% 50%, 50% 100%, 0 100%);
+    /* background: #00a;    */
+    transition-delay: .5s;
+}
+.box span:nth-child(4){
+    clip-path: polygon(50% 50%, 100% 50%, 100% 100%, 50% 100%);
+    /* background: #aa0;    */
+    transition-delay: 0.75s;
 }
 
-.navigation ul li.active a .text{
-    opacity: 1;
-    transform: translateY(10px);
+/* Hover Effects */
+.box:hover span:nth-child(1){
+    transform: translate(-40px, -60px) rotate(-15deg);
+}
+.box:hover span:nth-child(2){
+    transform: translate(40px, -100px) rotate(25deg);
+}
+.box:hover span:nth-child(3){
+    transform: translate(-40px, 80px) rotate(15deg);     
+}
+.box:hover span:nth-child(4){
+    transform: translate(40px, 80px) rotate(-15deg);
+      
 }
 
-/* .navigation ul li:hover a .text{
-    opacity: 1;
-    transform: translateY(10px);
-} */
 
-.indicator{
-    position:absolute;
-    top:-50%;
-    width: 70px;
-    height:70px;
-    background: #29fd53;
-    border-radius: 50%;
-    border: 6px solid var(--clr);
-    transition: 0.5s;
-}
 
-.indicator::before{
-    content: '';
-    position:absolute;
-    top:50%;
-    left:-22px;
-    width: 20px;
-    height: 20px;
-    background: transparent;
-    border-top-right-radius: 20px;
-    box-shadow: 1px -10px 0 0  var(--clr);
-}
 
-.indicator::after{
-    content: '';
-    position:absolute;
-    top:50%;
-    right:-22px;
-    width: 20px;
-    height: 20px;
-    background: transparent;
-    border-top-left-radius: 20px;
-    box-shadow: -1px -10px 0 0  var(--clr);
-}
 
-.navigation ul li:nth-child(1).active ~ .indicator{
-    transform: translateX(calc(70px * 0));
-}
-.navigation ul li:nth-child(2).active ~ .indicator{
-    transform: translateX(calc(70px * 1));
-}
-.navigation ul li:nth-child(3).active ~ .indicator{
-    transform: translateX(calc(70px * 2));
-}
-.navigation ul li:nth-child(4).active ~ .indicator{
-    transform: translateX(calc(70px * 3));
-}
-.navigation ul li:nth-child(5).active ~ .indicator{
-    transform: translateX(calc(70px * 4));
-}
+
+
+
+
+
+

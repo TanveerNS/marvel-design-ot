@@ -1,279 +1,65 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>3D Text</title>
-  <link rel="stylesheet" href="./style.css">
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="stylesheet" type="text/css" href="main.css">
 
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<div class='grain'></div>
-<div class='intro'>
-  <div class='center'>
-    <div class='core'></div>
-    <div class='outer_one'>
-      <div class='outer_one__piece'></div>
-      <div class='outer_one__piece'></div>
-      <div class='outer_one__piece'></div>
-      <div class='outer_one__piece'></div>
-      <div class='outer_one__piece'></div>
-      <div class='outer_one__piece'></div>
-      <div class='outer_one__piece'></div>
-      <div class='outer_one__piece'></div>
-      <div class='outer_one__piece'></div>
-      <div class='outer_one__piece'></div>
-      <div class='outer_one__piece'></div>
-      <div class='outer_one__piece'></div>
-      <div class='outer_one__piece'></div>
-      <div class='outer_one__piece'></div>
-      <div class='outer_one__piece'></div>
-      <div class='outer_one__piece'></div>
-      <div class='outer_one__piece'></div>
-      <div class='outer_one__piece'></div>
-      <div class='outer_one__piece'></div>
-      <div class='outer_one__piece'></div>
-      <div class='outer_one__piece'></div>
-      <div class='outer_one__piece'></div>
-      <div class='outer_one__piece'></div>
-      <div class='outer_one__piece'></div>
-      <div class='outer_one__piece'></div>
-      <div class='outer_one__piece'></div>
-      <div class='outer_one__piece'></div>
-      <div class='outer_one__piece'></div>
-      <div class='outer_one__piece'></div>
-      <div class='outer_one__piece'></div>
-      <div class='outer_one__piece'></div>
-      <div class='outer_one__piece'></div>
-      <div class='outer_one__piece'></div>
-      <div class='outer_one__piece'></div>
-      <div class='outer_one__piece'></div>
-      <div class='outer_one__piece'></div>
+    <title>Dist</title>
+  </head>
+  <body>
+    <div class="navigation">
+      <ul>
+        <li class="list active">
+          <a href="#">
+            <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+            <span class="text">Home</span>
+          </a>
+        </li>
+        <li class="list">
+          <a href="#">
+            <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+            <span class="text">Profile</span>
+          </a>
+        </li>
+        <li class="list">
+          <a href="#">
+            <span class="icon"><ion-icon name="chatbubble-outline"></ion-icon></span>
+            <span class="text">Message</span>
+          </a>
+        </li>
+        <li class="list">
+          <a href="#">
+            <span class="icon"><ion-icon name="camera-outline"></ion-icon></span>
+            <span class="text">Photoe</span>
+          </a>
+        </li>
+        <li class="list">
+          <a href="#">
+            <span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
+            <span class="text">Settings</span>
+          </a>
+        </li>
+        <div class="indicator"></div>
+      </ul>
     </div>
-    <div class='outer_two'>
-      <div class='outer_two__piece'></div>
-      <div class='outer_two__piece'></div>
-      <div class='outer_two__piece'></div>
-      <div class='outer_two__piece'></div>
-      <div class='outer_two__piece'></div>
-      <div class='outer_two__piece'></div>
-      <div class='outer_two__piece'></div>
-      <div class='outer_two__piece'></div>
-      <div class='outer_two__piece'></div>
-      <div class='outer_two__piece'></div>
-      <div class='outer_two__piece'></div>
-      <div class='outer_two__piece'></div>
-      <div class='outer_two__piece'></div>
-      <div class='outer_two__piece'></div>
-      <div class='outer_two__piece'></div>
-      <div class='outer_two__piece'></div>
-      <div class='outer_two__piece'></div>
-      <div class='outer_two__piece'></div>
-      <div class='outer_two__piece'></div>
-      <div class='outer_two__piece'></div>
-      <div class='outer_two__piece'></div>
-      <div class='outer_two__piece'></div>
-      <div class='outer_two__piece'></div>
-      <div class='outer_two__piece'></div>
-      <div class='outer_two__piece'></div>
-      <div class='outer_two__piece'></div>
-      <div class='outer_two__piece'></div>
-      <div class='outer_two__piece'></div>
-      <div class='outer_two__piece'></div>
-      <div class='outer_two__piece'></div>
-      <div class='outer_two__piece'></div>
-      <div class='outer_two__piece'></div>
-      <div class='outer_two__piece'></div>
-      <div class='outer_two__piece'></div>
-      <div class='outer_two__piece'></div>
-      <div class='outer_two__piece'></div>
-    </div>
-    <div class='outer_three'>
-      <div class='outer_three__piece'></div>
-      <div class='outer_three__piece'></div>
-      <div class='outer_three__piece'></div>
-      <div class='outer_three__piece'></div>
-      <div class='outer_three__piece'></div>
-      <div class='outer_three__piece'></div>
-      <div class='outer_three__piece'></div>
-      <div class='outer_three__piece'></div>
-      <div class='outer_three__piece'></div>
-      <div class='outer_three__piece'></div>
-      <div class='outer_three__piece'></div>
-      <div class='outer_three__piece'></div>
-      <div class='outer_three__piece'></div>
-      <div class='outer_three__piece'></div>
-      <div class='outer_three__piece'></div>
-      <div class='outer_three__piece'></div>
-      <div class='outer_three__piece'></div>
-      <div class='outer_three__piece'></div>
-      <div class='outer_three__piece'></div>
-      <div class='outer_three__piece'></div>
-      <div class='outer_three__piece'></div>
-      <div class='outer_three__piece'></div>
-      <div class='outer_three__piece'></div>
-      <div class='outer_three__piece'></div>
-      <div class='outer_three__piece'></div>
-      <div class='outer_three__piece'></div>
-      <div class='outer_three__piece'></div>
-      <div class='outer_three__piece'></div>
-      <div class='outer_three__piece'></div>
-      <div class='outer_three__piece'></div>
-      <div class='outer_three__piece'></div>
-      <div class='outer_three__piece'></div>
-      <div class='outer_three__piece'></div>
-      <div class='outer_three__piece'></div>
-      <div class='outer_three__piece'></div>
-      <div class='outer_three__piece'></div>
-    </div>
-    <div class='outer_four'>
-      <div class='outer_four__piece'></div>
-      <div class='outer_four__piece'></div>
-      <div class='outer_four__piece'></div>
-      <div class='outer_four__piece'></div>
-      <div class='outer_four__piece'></div>
-      <div class='outer_four__piece'></div>
-      <div class='outer_four__piece'></div>
-      <div class='outer_four__piece'></div>
-      <div class='outer_four__piece'></div>
-      <div class='outer_four__piece'></div>
-      <div class='outer_four__piece'></div>
-      <div class='outer_four__piece'></div>
-      <div class='outer_four__piece'></div>
-      <div class='outer_four__piece'></div>
-      <div class='outer_four__piece'></div>
-      <div class='outer_four__piece'></div>
-      <div class='outer_four__piece'></div>
-      <div class='outer_four__piece'></div>
-      <div class='outer_four__piece'></div>
-      <div class='outer_four__piece'></div>
-      <div class='outer_four__piece'></div>
-      <div class='outer_four__piece'></div>
-      <div class='outer_four__piece'></div>
-      <div class='outer_four__piece'></div>
-      <div class='outer_four__piece'></div>
-      <div class='outer_four__piece'></div>
-      <div class='outer_four__piece'></div>
-      <div class='outer_four__piece'></div>
-      <div class='outer_four__piece'></div>
-      <div class='outer_four__piece'></div>
-      <div class='outer_four__piece'></div>
-      <div class='outer_four__piece'></div>
-      <div class='outer_four__piece'></div>
-      <div class='outer_four__piece'></div>
-      <div class='outer_four__piece'></div>
-      <div class='outer_four__piece'></div>
-    </div>
-    <div class='outer_five'>
-      <div class='outer_five__piece'></div>
-      <div class='outer_five__piece'></div>
-      <div class='outer_five__piece'></div>
-      <div class='outer_five__piece'></div>
-      <div class='outer_five__piece'></div>
-      <div class='outer_five__piece'></div>
-      <div class='outer_five__piece'></div>
-      <div class='outer_five__piece'></div>
-      <div class='outer_five__piece'></div>
-      <div class='outer_five__piece'></div>
-      <div class='outer_five__piece'></div>
-      <div class='outer_five__piece'></div>
-      <div class='outer_five__piece'></div>
-      <div class='outer_five__piece'></div>
-      <div class='outer_five__piece'></div>
-      <div class='outer_five__piece'></div>
-      <div class='outer_five__piece'></div>
-      <div class='outer_five__piece'></div>
-      <div class='outer_five__piece'></div>
-      <div class='outer_five__piece'></div>
-      <div class='outer_five__piece'></div>
-      <div class='outer_five__piece'></div>
-      <div class='outer_five__piece'></div>
-      <div class='outer_five__piece'></div>
-      <div class='outer_five__piece'></div>
-      <div class='outer_five__piece'></div>
-      <div class='outer_five__piece'></div>
-      <div class='outer_five__piece'></div>
-      <div class='outer_five__piece'></div>
-      <div class='outer_five__piece'></div>
-      <div class='outer_five__piece'></div>
-      <div class='outer_five__piece'></div>
-      <div class='outer_five__piece'></div>
-      <div class='outer_five__piece'></div>
-      <div class='outer_five__piece'></div>
-      <div class='outer_five__piece'></div>
-    </div>
-    <div class='pieces'>
-      <div class='future_ui__piece'>
-        <span>Warp drive</span>
-        <div class='line'></div>
-        <div class='tip'>
-          Yes, commander!
-        </div>
-      </div>
-      <div class='future_ui__piece'>
-        <span>Teleport</span>
-        <div class='line'></div>
-        <div class='tip'>
-          Beam me up!
-        </div>
-      </div>
-      <div class='future_ui__piece'>
-        <span>Fusion core</span>
-        <div class='line'></div>
-        <div class='tip'>
-          Engineering!
-        </div>
-      </div>
-      <div class='future_ui__piece'>
-        <span>Laser target</span>
-        <div class='line'></div>
-        <div class='tip'>
-          Charge laz0rs!
-        </div>
-      </div>
-      <div class='future_ui__piece'>
-        <span>Shields</span>
-        <div class='line'></div>
-        <div class='tip'>
-          Status report!
-        </div>
-      </div>
-      <div class='future_ui__piece blank'></div>
-      <div class='future_ui__piece blank'></div>
-      <div class='future_ui__piece blank'></div>
-      <div class='future_ui__piece blank'></div>
-      <div class='future_ui__piece blank'></div>
-      <div class='future_ui__piece blank'></div>
-      <div class='future_ui__piece blank'></div>
-      <div class='future_ui__piece blank'></div>
-      <div class='future_ui__piece blank'></div>
-      <div class='future_ui__piece blank'></div>
-      <div class='future_ui__piece blank'></div>
-      <div class='future_ui__piece blank'></div>
-      <div class='future_ui__piece blank'></div>
-      <div class='future_ui__piece blank'></div>
-      <div class='future_ui__piece blank'></div>
-      <div class='future_ui__piece blank'></div>
-      <div class='future_ui__piece blank'></div>
-      <div class='future_ui__piece blank'></div>
-      <div class='future_ui__piece blank'></div>
-      <div class='future_ui__piece blank'></div>
-      <div class='future_ui__piece blank'></div>
-      <div class='future_ui__piece blank'></div>
-      <div class='future_ui__piece blank'></div>
-      <div class='future_ui__piece blank'></div>
-      <div class='future_ui__piece blank'></div>
-      <div class='future_ui__piece blank'></div>
-      <div class='future_ui__piece blank'></div>
-      <div class='future_ui__piece blank'></div>
-      <div class='future_ui__piece blank'></div>
-      <div class='future_ui__piece blank'></div>
-      <div class='future_ui__piece blank'></div>
-    </div>
-  </div>
-</div>
-<!-- partial -->
-  <script  src="./script.js"></script>
-
-</body>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+      const list = document.querySelectorAll('.list');
+      function activeLink() {
+        list.forEach((item)=>{
+          item.classList.remove('active')
+        })
+        this.classList.add('active')
+      }
+      list.forEach((item)=>{
+        item.addEventListener('click', activeLink)
+      })
+    </script>
+  </body>
 </html>
